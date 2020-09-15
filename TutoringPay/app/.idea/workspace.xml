@@ -12,11 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6b15b5b-3ae9-478f-9a9b-d3a0756be086" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/RetrofitClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_network.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_network.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/moeun2/TutoringPay.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1hHqzWfDyXFgIdibJFvWmWdHdJ5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -198,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600167432858</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[add] StudentVO">
+      <created>1600170379874</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600170379874</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,7 +217,8 @@
     <MESSAGE value="[add] coocon api test" />
     <MESSAGE value="[add] coocon api test (TestActivity)" />
     <MESSAGE value="[add] st_calendar (server)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] st_calendar (server)" />
+    <MESSAGE value="[add] StudentVO" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] StudentVO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="915" y="264" key="#PSD" timestamp="1600147200940">
@@ -230,31 +241,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1295" y="288" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600151947246" />
-    <state x="781" y="77" key="CommitChangelistDialog2" timestamp="1600170348940">
+    <state x="781" y="77" key="CommitChangelistDialog2" timestamp="1600173570664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="781" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600170348940" />
+    <state x="781" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600173570664" />
     <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl" timestamp="1600149245395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600149245395" />
-    <state width="914" height="365" key="GridCell.Tab.0.bottom" timestamp="1600151976730">
+    <state width="914" height="357" key="GridCell.Tab.0.bottom" timestamp="1600173428057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600151976730" />
-    <state width="914" height="365" key="GridCell.Tab.0.center" timestamp="1600151976730">
+    <state width="914" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428057" />
+    <state width="914" height="357" key="GridCell.Tab.0.center" timestamp="1600173428057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600151976730" />
-    <state width="914" height="365" key="GridCell.Tab.0.left" timestamp="1600151976729">
+    <state width="914" height="357" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428057" />
+    <state width="914" height="357" key="GridCell.Tab.0.left" timestamp="1600173428056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600151976729" />
-    <state width="914" height="365" key="GridCell.Tab.0.right" timestamp="1600151976730">
+    <state width="914" height="357" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428056" />
+    <state width="914" height="357" key="GridCell.Tab.0.right" timestamp="1600173428057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600151976730" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600167436392">
+    <state width="914" height="357" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428057" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600170384872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600167436392" />
@@ -262,6 +273,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1234" y="301" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600104439239" />
+    <state x="1228" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600173698900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1228" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600173698900" />
+    <state x="676" y="310" key="git4idea.merge.GitPullDialog" timestamp="1600173475906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="310" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600173475906" />
     <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1600106828335">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
