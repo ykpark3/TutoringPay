@@ -1,5 +1,8 @@
 package com.pay.tutoring.data;
 
+/**
+ * user의 개인정보 VO
+ */
 public class CustVO {
 
     String name;

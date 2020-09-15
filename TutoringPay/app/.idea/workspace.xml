@@ -12,6 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c6b15b5b-3ae9-478f-9a9b-d3a0756be086" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/data/CustVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/data/CustVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600161772724</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[add] coocon api test (TestActivity)">
+      <created>1600162020407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600162020407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,10 +206,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="915" y="264" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1600147200940" />
-    <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1600151384619">
+    <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1600163215957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600151384619" />
+    <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600163215957" />
     <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599712373672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1295" y="288" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600151947246" />
-    <state x="781" y="77" key="CommitChangelistDialog2" timestamp="1600161771135">
+    <state x="781" y="77" key="CommitChangelistDialog2" timestamp="1600162018025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="781" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600161771135" />
+    <state x="781" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600162018025" />
     <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl" timestamp="1600149245395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600151976730" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600161709806">
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600162023950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600161709806" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600162023950" />
     <state x="1234" y="301" key="chooseDestDirectoryDialog" timestamp="1600104439239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

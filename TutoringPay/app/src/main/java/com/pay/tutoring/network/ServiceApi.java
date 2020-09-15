@@ -22,7 +22,8 @@ public interface ServiceApi {
 //    Call<LoginResponse> getUserData(@Body LoginData data);
     @POST("/user/login")
     Call<LoginResponse> userLogin(@Body LoginData data);
-
+    @POST("/user/selectStudent")
+    Call<ResponseBody> selectStudent(@Query("teacher_id") String teacher_id);
     @POST("/HKT_API_101.jct")
     Call<ResponseBody> get101Data(@Query("OGN_CD") String OGN_CD,@Query("CUST_ID") String CUST_ID,@Query("TRAN_DT") String TRAN_DT,@Query("TRAN_TM") String TRAN_TM,@Query("TRAN_DIV") String TRAN_DIV );
 
