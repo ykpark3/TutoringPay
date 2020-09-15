@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <!--임시지정칼라-->
+    <color name="lightGray">#DEDEDE</color>
+    <color name="iconText">#e4f9f5</color>
+    <color name="background">#11999e</color>
+    <color name="transparentColor">#00000000</color>
+    <color name="violet">#e0bfe6</color>
+</resources>
