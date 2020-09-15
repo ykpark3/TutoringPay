@@ -33,12 +33,22 @@ import com.kakao.util.exception.KakaoException;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
+import com.pay.tutoring.AppManager;
 import com.pay.tutoring.MainActivity;
 import com.pay.tutoring.R;
+import com.pay.tutoring.card.CardActivity;
+import com.pay.tutoring.data.CustVO;
 
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 /**
@@ -161,7 +171,7 @@ public class LoginActivity extends Activity {
 
         @Override
         public void onSessionOpenFailed(KakaoException exception) {
-            Log.e("KAKAO_SESSION", "로그인 실패", exception);
+            Log.e("KAKAO_SESSION", "로그인 실 패", exception);
         }
 
         public void requestMe() {
@@ -330,7 +340,7 @@ public class LoginActivity extends Activity {
                     mOAuthLoginInstance.startOauthLoginActivity(LoginActivity.this, mOAuthLoginHandler);
                     Log.i("모은", " btnClickListener 네이버 로그인 버튼 누름");
 
-
+                    goToNextActivity();
                     break;
 
 
@@ -366,7 +376,6 @@ public class LoginActivity extends Activity {
         protected String doInBackground(Void... params) {
             String url = "https://openapi.naver.com/v1/nid/me";
             String at = mOAuthLoginInstance.getAccessToken(mContext);
-            ;
             String data = mOAuthLoginInstance.requestApi(mContext, at, url);
             try {
                 JSONObject result = new JSONObject(data);
@@ -385,6 +394,9 @@ public class LoginActivity extends Activity {
                 Log.i("name", name);
                 Log.i("birthday", birthday);
 
+                CustVO custVO = AppManager.getInstance().getCustVO();
+                custVO.setName(name);
+                AppManager.getInstance().setCustVO(custVO);
 
 
             } catch (JSONException e) {
@@ -437,14 +449,13 @@ public class LoginActivity extends Activity {
 
 
 
-
-
-    public void goToNextActivity() {
+    private void goToNextActivity() {
         Log.i("모은", "goToNextActivity");
         finish();
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AgreePersonalInfortmation.class);
         startActivity(intent);
     }
+
 
 
 

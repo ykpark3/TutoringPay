@@ -13,6 +13,7 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pay.tutoring.calendar.FragmentCalendar;
+import com.pay.tutoring.data.StudentVO;
 import com.pay.tutoring.notification.FragmentNotifications;
 import com.pay.tutoring.payment.FragmentPayment;
 import com.pay.tutoring.setting.FragmentSetting;
@@ -30,6 +31,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
@@ -59,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
         //bottom navigation view 설정
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
+
+        ArrayList<StudentVO> studentList = AppManager.getInstance().getStudentList();
+        for(StudentVO student : studentList)
+        {
+            Log.i("모은 studentList", student.getName());
+        }
 
     }
 
