@@ -117,9 +117,6 @@ public class LoadingActivity extends AppCompatActivity {
                     JSONArray jsonArray = null;
                     try {
 
-
-
-//                        jsonArray = new JSONArray(result);
                         JSONObject jObject = new JSONObject(result);
                         jsonArray = (JSONArray) jObject.get("result");
 

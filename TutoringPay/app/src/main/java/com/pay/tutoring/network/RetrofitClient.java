@@ -18,9 +18,9 @@ public class RetrofitClient {
                     .addConverterFactory(GsonConverterFactory.create()) // JSON 파싱을 위한 GsonConverterFactory를 추가한다.
                     .build();
         }
-
         return retrofit;
     }
+
     public static Retrofit getCooConClient() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
