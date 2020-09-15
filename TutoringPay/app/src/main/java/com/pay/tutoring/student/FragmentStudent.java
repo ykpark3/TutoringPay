@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.pay.tutoring.AppManager;
 import com.pay.tutoring.R;
 import com.pay.tutoring.calendar.FragmentCalendar;
 
@@ -32,6 +33,8 @@ public class FragmentStudent extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_student, container, false);
+
+
 
         return view;
     }

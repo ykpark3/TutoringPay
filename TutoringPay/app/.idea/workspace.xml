@@ -6,17 +6,55 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6b15b5b-3ae9-478f-9a9b-d3a0756be086" name="Default Changelist" comment="" />
+    <list default="true" id="c6b15b5b-3ae9-478f-9a9b-d3a0756be086" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_9_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/AgreePersonalInfortmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/SelectTeacherStudentActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/NetworkActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/NetworkStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/RetrofitClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/loading_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/bank_kb_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_arrow_back_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_agree_personal_infortmation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_loading.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_network.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_select_teacher_student.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/FragmentStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/FragmentStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/utility/CheckNetworkState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="3300e668b3489249" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -36,7 +74,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1hHqzWfDyXFgIdibJFvWmWdHdJ5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -44,16 +86,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/res/layout" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/pay/tutoring" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-862241591">
       <recent name="com.pay.tutoring" />
     </key>
+    <key name="android.template.1246808754">
+      <recent name="com.pay.tutoring.loading" />
+    </key>
+    <key name="android.template.-703763659">
+      <recent name="com.pay.tutoring.login" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pay.tutoring.card" />
+      <recent name="com.pay.tutoring.login" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\layout" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\drawable" />
       <recent name="C:\Users\mo_ah\Desktop\TutoringPay\app\src\main\res\layout" />
-      <recent name="C:\Users\mo_ah\Desktop\TutoringPay\app\src\main\res" />
     </key>
   </component>
   <component name="RunManager">
@@ -130,13 +187,53 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1599997240681">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599997240681" />
     <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599712373672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599712373672" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1599712635000">
+    <state x="1297" y="336" key="AndroidCreateXmlResourceDialog" timestamp="1599997117748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599712635000" />
+    <state x="1297" y="336" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599997117748" />
+    <state x="1057" y="117" key="CommitChangelistDialog2" timestamp="1600144974996">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1057" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600144974996" />
+    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl" timestamp="1599998957726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599998957726" />
+    <state width="914" height="-41" key="GridCell.Tab.0.bottom" timestamp="1600134377201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="-41" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
+    <state width="914" height="-41" key="GridCell.Tab.0.center" timestamp="1600134377201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="-41" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
+    <state width="914" height="-41" key="GridCell.Tab.0.left" timestamp="1600134377201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="-41" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
+    <state width="914" height="-41" key="GridCell.Tab.0.right" timestamp="1600134377201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="-41" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600144940271">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600144940271" />
+    <state x="1234" y="301" key="chooseDestDirectoryDialog" timestamp="1600104439239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1234" y="301" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600104439239" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1600106828335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600106828335" />
   </component>
 </project>
