@@ -25,8 +25,11 @@ public class LoadingActivity extends AppCompatActivity {
         int networkSatusNum = networkStatus.getConnectivityStatus(getApplicationContext());
         if (networkSatusNum == networkStatus.TYPE_NOT_CONNECTED)
             goToNextActivity(new NetworkActivity());
+
         else
             goToNextActivity(new LoginActivity());
+//            goToNextActivity(new TestActivity());
+
 
     }
 
