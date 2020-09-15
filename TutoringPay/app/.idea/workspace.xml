@@ -11,50 +11,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6b15b5b-3ae9-478f-9a9b-d3a0756be086" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_9_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/AgreePersonalInfortmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/SelectTeacherStudentActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/NetworkActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/NetworkStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/RetrofitClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/loading_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/bank_kb_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_arrow_back_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_agree_personal_infortmation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_loading.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_network.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_select_teacher_student.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_PhilJay_MPAndroidChart_v3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_prolificinteractive_material_calendarview_1_4_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/ClassAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/ClassData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/EventDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/OneDayDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/SaturdayDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/SundayDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/ExpandableListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/border_more.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-v24/unannn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/class_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_child.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_header.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/FragmentCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/FragmentCalendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/FragmentPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/FragmentPayment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/FragmentStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/FragmentStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/utility/CheckNetworkState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_calendar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_payment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_payment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_student.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_student.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_27" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="3300e668b3489249" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -88,7 +77,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/pay/tutoring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
+    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -106,11 +98,11 @@
       <recent name="com.pay.tutoring.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring" />
       <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\layout" />
-      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\drawable" />
-      <recent name="C:\Users\mo_ah\Desktop\TutoringPay\app\src\main\res\layout" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring\student" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring\calendar" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring" />
     </key>
   </component>
   <component name="RunManager">
@@ -184,9 +176,25 @@
       <option name="presentableId" value="Default" />
       <updated>1599678627772</updated>
     </task>
+    <task id="LOCAL-00001" summary="[add] moeun ui">
+      <created>1600145125226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600145125226</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[add] moeun ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] moeun ui" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="915" y="264" key="#PSD" timestamp="1600147200940">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="915" y="264" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1600147200940" />
     <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1599997240681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,34 +207,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1297" y="336" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599997117748" />
-    <state x="1057" y="117" key="CommitChangelistDialog2" timestamp="1600144974996">
+    <state x="172" y="97" key="CommitChangelistDialog2" timestamp="1600145113574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1057" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600144974996" />
-    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl" timestamp="1599998957726">
+    <state x="172" y="97" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600145113574" />
+    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl" timestamp="1600147425722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599998957726" />
-    <state width="914" height="-41" key="GridCell.Tab.0.bottom" timestamp="1600134377201">
+    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600147425722" />
+    <state width="914" height="-41" key="GridCell.Tab.0.bottom" timestamp="1600147072944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="-41" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
-    <state width="914" height="-41" key="GridCell.Tab.0.center" timestamp="1600134377201">
+    <state width="914" height="-41" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600147072944" />
+    <state width="914" height="-41" key="GridCell.Tab.0.center" timestamp="1600147072944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="-41" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
-    <state width="914" height="-41" key="GridCell.Tab.0.left" timestamp="1600134377201">
+    <state width="914" height="-41" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600147072944" />
+    <state width="914" height="-41" key="GridCell.Tab.0.left" timestamp="1600147072944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="-41" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
-    <state width="914" height="-41" key="GridCell.Tab.0.right" timestamp="1600134377201">
+    <state width="914" height="-41" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600147072944" />
+    <state width="914" height="-41" key="GridCell.Tab.0.right" timestamp="1600147072944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="-41" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600134377201" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600144940271">
+    <state width="914" height="-41" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600147072944" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600145126847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600144940271" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600145126847" />
     <state x="1234" y="301" key="chooseDestDirectoryDialog" timestamp="1600104439239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
