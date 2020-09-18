@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".payment.card.TransferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="닫기"
+
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="송금"
+            android:textSize="@dimen/text_size_title"
+
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/list_account_num"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_line"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="visible">
+
+
+            </LinearLayout>
+
+            <com.pay.tutoring.utility.CustomEditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="받는사람 ID, 또는 계좌번호"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/text_size_normal"
+
+                />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_search" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:id="@+id/sort_predit"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:background="@drawable/border_normal"
+                android:gravity="center"
+                android:text="내계좌" />
+
+            <TextView
+                android:id="@+id/sort_location"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+
+                android:background="@drawable/border_normal"
+                android:gravity="center"
+                android:text="최근계좌" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_more"
+            android:text="+계좌번호 직접입력" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

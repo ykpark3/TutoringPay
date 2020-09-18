@@ -7,8 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,17 +15,16 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pay.tutoring.MainActivity;
+import com.pay.tutoring.AppManager;
 import com.pay.tutoring.R;
+import com.pay.tutoring.student.StudentVO;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.CalendarMode;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
-import com.prolificinteractive.materialcalendarview.OnMonthChangedListener;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Dictionary;
 import java.util.List;
 import java.util.concurrent.Executors;
 
@@ -46,16 +43,26 @@ public class FragmentCalendar extends Fragment {
     private final OneDayDecorator oneDayDecorator = new OneDayDecorator();
     MaterialCalendarView materialCalendarView;
 
-    private ArrayList<ClassData> mArrayList;
-    private ClassAdapter mAdapter;
-    private int count = 0;
+    Calendar calendar;
+    CalendarDay calendarDay;
+    ArrayList<CalendarDay> dates;
 
+    private ArrayList<ClassData> classList;   // 수업 목록
+    private ArrayList<ClassData> todayClassList;   // 표시할 목록
+    private ClassAdapter mAdapter;
+    private ArrayList<StudentVO> studentList;   // 전체 수업 목록
 
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        studentList = AppManager.getInstance().getStudentList();
+
+        classList = new ArrayList<>();
+
+        Log.d("!!!!!", "fragment calendar");
+        Log.d("!!!!!", "studentList size???: " + String.valueOf(studentList.size()));
     }
 
     @Override
@@ -68,37 +75,16 @@ public class FragmentCalendar extends Fragment {
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
 
-        mArrayList = new ArrayList<>();
+        todayClassList = new ArrayList<>();
 
-        mAdapter = new ClassAdapter(mArrayList);
+        mAdapter = new ClassAdapter(todayClassList, getActivity());
         mRecyclerView.setAdapter(mAdapter);
 
 
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(), mLinearLayoutManager.getOrientation());
         mRecyclerView.addItemDecoration(dividerItemDecoration);
 
-
-        Button buttonInsert = view.findViewById(R.id.button_main_insert);
-
-        buttonInsert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                count++;
-
-                Log.d("!!!!!","추가");
-                ClassData data = new ClassData(count+"유재석","11:30~13:00","2/8","O");
-
-                //mArrayList.add(0, dict); //RecyclerView의 첫 줄에 삽입
-                mArrayList.add(data); // RecyclerView의 마지막 줄에 삽입
-
-                Log.d("!!!!!!","arraylist size:"+String.valueOf(mArrayList.size()));
-                mAdapter.notifyDataSetChanged();
-            }
-        });
-
-
-
+        mAdapter.notifyDataSetChanged();
 
 
         materialCalendarView = view.findViewById(R.id.calendarView);
@@ -116,36 +102,33 @@ public class FragmentCalendar extends Fragment {
                 new SaturdayDecorator(),
                 oneDayDecorator);
 
-        String[] result = {"2020,08,01","2020,09,01","2020,10,01","2020,11,01"};
-        new ApiSimulator(result).executeOnExecutor(Executors.newSingleThreadExecutor());
+
+        Log.d("!!!!!", "studentList size: " + String.valueOf(studentList.size()));
+
+
+        new ApiSimulator(studentList).executeOnExecutor(Executors.newSingleThreadExecutor());
+
 
         // 클릭 이벤트
         materialCalendarView.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
 
-                int Year = date.getYear();
-                int Month = date.getMonth() + 1;
-                int Day = date.getDay();
+                Log.d("!!!!!date test ", String.valueOf(date));
 
-                Log.i("Year test", Year + "");
-                Log.i("Month test", Month + "");
-                Log.i("Day test", Day + "");
+                todayClassList.clear();
 
-                String shot_Day = Year + "," + Month + "," + Day;
+                for (ClassData classData : classList) {
+                    if (date.equals(classData.getDate())) {
+                        ClassData data = new ClassData(classData.getName(), date, classData.getTime(), classData.getCount(), "-");
 
-                Log.i("!!!!!shot_Day test ", shot_Day + "");
+                        todayClassList.add(data);
+                    }
+
+                }
+                mAdapter.notifyDataSetChanged();
+
                 materialCalendarView.clearSelection();
-
-            }
-        });
-
-
-        // 달력이 변화할 때 이벤트
-        materialCalendarView.setOnMonthChangedListener(new OnMonthChangedListener() {
-            @Override
-            public void onMonthChanged(MaterialCalendarView widget, CalendarDay date) {
-
             }
         });
 
@@ -154,12 +137,12 @@ public class FragmentCalendar extends Fragment {
 
 
     private class ApiSimulator extends AsyncTask<Void, Void, List<CalendarDay>> {
+        ArrayList<StudentVO> studentList;
 
-        String[] Time_Result;
-
-        ApiSimulator(String[] Time_Result){
-            this.Time_Result = Time_Result;
+        ApiSimulator(ArrayList<StudentVO> studentList) {
+            this.studentList = studentList;
         }
+
 
         @Override
         protected List<CalendarDay> doInBackground(@NonNull Void... voids) {
@@ -169,37 +152,33 @@ public class FragmentCalendar extends Fragment {
                 e.printStackTrace();
             }
 
-            Log.d("!!!!!","doInBackground");
+            Log.d("!!!!!", "doInBackground");
 
-            Calendar calendar = Calendar.getInstance();
-            //calendar.add(Calendar.MONTH, -2);   // 2달 전부터
+            calendar = Calendar.getInstance();
 
-            ArrayList<CalendarDay> dates = new ArrayList<>();
+            dates = new ArrayList<>();   // 점 찍는 거 추가
 
-            /*
-            특정날짜 달력에 표시
-            월은 0이 1월 년,일은 그대로
-            string 문자열인 Time_Result 을 받아와서 ,를 기준으로 자르고 string을 int로 변환
-             */
+            for (StudentVO student : studentList) {
 
-            Log.d("!!!!!","타임 길이 "+String.valueOf(Time_Result.length));
-
-            for(int i = 0 ; i < Time_Result.length ; i ++){
-
-                Log.d("!!!!!","타임   "+ i+ "   " +Time_Result[i]);
-
-                String[] time = Time_Result[i].split(",");
+                String[] time = student.getLectureDay().split("\\.");
+                Log.d("!!!!!", String.valueOf(time.length));
 
                 int year = Integer.parseInt(time[0]);
                 int month = Integer.parseInt(time[1]);
-                int dayy = Integer.parseInt(time[2]);
+                int day = Integer.parseInt(time[2]);
 
-                calendar.set(year,month-1,dayy);
+                calendar.set(year, month - 1, day);
+                calendarDay = CalendarDay.from(calendar);
+                dates.add(calendarDay);
 
-                CalendarDay day = CalendarDay.from(calendar);
-                dates.add(day);
+                Log.d("!!!!!","calendarDay:"+ calendarDay);
 
-                Log.d("!!!!!","day "+ "   " +day);
+                ClassData data = new ClassData(student.getName(), calendarDay,student.getStartTime() + "~" + student.getEndTime(), student.getCount() + "/" + student.getTotalCount(), student.getProgress());
+                classList.add(data);
+
+                makeDot(student, student.getRepeatDay());
+
+                Log.d("!!!!!","calendarDay:"+ String.valueOf(calendarDay));
             }
 
             return dates;
@@ -209,22 +188,34 @@ public class FragmentCalendar extends Fragment {
         protected void onPostExecute(@NonNull List<CalendarDay> calendarDays) {
             super.onPostExecute(calendarDays);
 
-            Log.d("!!!!!","onPostExecute");
+            Log.d("!!!!!", "onPostExecute");
+            /*
             if (getActivity().isFinishing()) {
                 return;
             }
+
+             */
 
             materialCalendarView.addDecorator(new EventDecorator(Color.RED, calendarDays, getActivity()));
         }
     }
 
-    /*
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    private void makeDot(StudentVO student, int repeatDay) {
+        int count = student.getCount();
 
-        Log.d("!!!!!","onViewCreated");
+        while (count <= student.getTotalCount()) {
+            calendar.set(Calendar.DAY_OF_WEEK,repeatDay);
+            calendar.add(Calendar.DATE, 7);
+            calendar.set(Calendar.DAY_OF_WEEK, repeatDay);
+            calendarDay = CalendarDay.from(calendar);
 
+            Log.d("!!!!!", "count"+ count + student.getName()+ String.valueOf(calendarDay));
+            ClassData data = new ClassData(student.getName(), calendarDay,student.getStartTime() + "~" + student.getEndTime(), count + "/" + student.getTotalCount(), student.getProgress());
+            classList.add(data);
+            dates.add(calendarDay);
 
-     */
+            count++;
+        }
+    }
+
 }

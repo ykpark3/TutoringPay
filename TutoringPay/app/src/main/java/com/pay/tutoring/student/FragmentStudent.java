@@ -1,6 +1,7 @@
 package com.pay.tutoring.student;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.pay.tutoring.AppManager;
 import com.pay.tutoring.R;
 
 import java.util.ArrayList;
@@ -17,8 +20,8 @@ import java.util.List;
 
 public class FragmentStudent extends Fragment {
 
-    private RecyclerView recyclerview;
-
+    private RecyclerView studentsList;
+    private FloatingActionButton addButton;
     public FragmentStudent() {
     }
 
@@ -32,39 +35,41 @@ public class FragmentStudent extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_student, container, false);
 
-        recyclerview = view.findViewById(R.id.recyclerview);
-        recyclerview.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-        List<ExpandableListAdapter.Item> data = new ArrayList<>();  // 데이터를 담을 List
+        studentsList = view.findViewById(R.id.students_list);
+        studentsList.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "손모은"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "월,수",8,"01049075608"));
+        final List<StudentsListAdapter.StudentInfo> studentList = new ArrayList<>();  // 데이터를 담을 List
+        ArrayList<StudentVO> list = AppManager.getInstance().getStudentList();
+        for(StudentVO student : list)
+        {
+            Log.i("모은", student.getName());
+        }
+        Log.i("윤환",list.get(0).getName());
+        addButton = view.findViewById(R.id.fab);
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "이윤환"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "월,수",4,"01049075608"));
+        addButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
 
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "박윤경"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "월,수",8,"01049075608"));
+                IdSearchDialog dialog = new IdSearchDialog(getActivity(), studentList);
+                dialog.show();
 
+                //data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "정상벽"));
+                //data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "월,수",8,"01049075608"));
+                //recyclerview.setAdapter(new ExpandableListAdapter(data));
 
+            }
+        });
 
-//
-//        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "정상벽"));
-//        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "축구"));
-//
-//        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "김채운"));
-//        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "축구"));
-//
-//        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "박태순"));
-//        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "축구"));
-        recyclerview.setAdapter(new ExpandableListAdapter(data));
+        studentsList.setAdapter(new StudentsListAdapter(studentList));
 
         return view;
     }

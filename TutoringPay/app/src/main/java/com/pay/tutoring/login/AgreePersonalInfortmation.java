@@ -63,7 +63,9 @@ public class AgreePersonalInfortmation extends AppCompatActivity {
             switch (view.getId()) {
                 case R.id.btn_next:
                     Log.i("모은", "next 버튼 누름");
+
                     startLogin(new LoginData(111,"111","111"));
+
                     finish();
                     Intent intent = new Intent(AgreePersonalInfortmation.this, CardActivity.class);
 //                    intent.putExtra("setting", "login");

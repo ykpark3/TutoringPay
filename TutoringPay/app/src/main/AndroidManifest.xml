@@ -14,9 +14,12 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loading.TestActivity"></activity>
-        <!-- <activity -->
+        <activity android:name=".payment.card.FinishTransfer"></activity>
+        <activity android:name=".payment.card.EnterAmountActivity" />
+        <activity android:name=".payment.card.TransferActivity" />
+        <activity android:name=".loading.TestActivity" /> <!-- <activity -->
         <!-- android:name=".MainActivity" -->
         <!-- android:label="@string/title_activity_main"></activity> -->
         <!-- 카카오 메타데이터 -->
@@ -30,8 +33,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!--        <activity android:name=".loading.LoadingActivity" />-->
+        </activity> <!-- <activity android:name=".loading.LoadingActivity" /> -->
         <activity android:name=".network.NetworkActivity" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".MainActivity" />

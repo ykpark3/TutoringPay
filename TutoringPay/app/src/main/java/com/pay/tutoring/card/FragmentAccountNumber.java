@@ -52,9 +52,9 @@ public class FragmentAccountNumber extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_account_number, container, false);
         MAX_COUNT = 15;
-        button = view.findViewById(R.id.agreement_button);
+        button = view.findViewById(R.id.btn_next);
         bankName = view.findViewById(R.id.bankText);
-        accountNumberEditText = view.findViewById(R.id.accountNumberEdit);
+        accountNumberEditText = view.findViewById(R.id.txt_pay);
         back_btn = view.findViewById(R.id.agreement_back_btn);
         warningText = view.findViewById(R.id.warningText);
         warningText.setText("");

@@ -1,11 +1,13 @@
 package com.pay.tutoring.calendar;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,12 +20,21 @@ import java.util.ArrayList;
 public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.CustomViewHolder> {
 
     private ArrayList<ClassData> mList;
+    Context context;
+    int selectedProgress;
+    private DateTimeDialog dateTimeDialog;
+
+    public ClassAdapter(ArrayList<ClassData> list, Context context) {
+        this.mList = list;
+        this.context = context;
+    }
+
 
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         protected TextView name;
         protected TextView time;
         protected TextView count;
-        protected TextView progress;
+        protected Button progress;
 
 
         public CustomViewHolder(View view) {
@@ -32,28 +43,72 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.CustomViewHo
             this.name = (TextView) view.findViewById(R.id.name);
             this.time = (TextView) view.findViewById(R.id.time);
             this.count = (TextView) view.findViewById(R.id.count);
-            this.progress = (TextView) view.findViewById(R.id.progress);
+            this.progress = (Button) view.findViewById(R.id.progress);
+
+
+            progress.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("!!!!!", "click");
+
+                    final String[] progressCondition = {"O", "→", "X"};
+
+
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(context, android.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
+                    dialog.setCancelable(true);
+
+                    dialog.setTitle("수업 진행 상태를 선택하세요.").setSingleChoiceItems(progressCondition, -1, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Log.d("!!!!!", "선택");
+                            selectedProgress = which;
+                            //nSelectItem = which;
+                        }
+                    })
+                            .setNeutralButton("선택", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Log.d("!!!!!", "선택 완료");
+
+                                    if (selectedProgress == 1) {
+                                        Log.d("!!!!!", "미루기 선택");
+
+                                        dateTimeDialog = new DateTimeDialog(context);
+                                        dateTimeDialog.callFunction();
+
+
+
+
+                                    }
+
+                                    progress.setText(progressCondition[selectedProgress]);
+
+                                    /*
+                                    if (which >= 0)
+                                        Toast.makeText(getApplicationContext(),
+                                                oItems[nSelectItem], Toast.LENGTH_LONG).show();
+
+                                     */
+                                }
+                            })
+                            .setCancelable(false)
+                            .show();
+
+                }
+            });
         }
     }
-
-    public ClassAdapter (ArrayList<ClassData> list) {
-        this.mList = list;
-    }
-
 
 
     @Override
     public CustomViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
 
         View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.class_list, viewGroup, false);
+                .inflate(R.layout.list_class, viewGroup, false);
 
         CustomViewHolder viewHolder = new CustomViewHolder(view);
 
         return viewHolder;
     }
-
-
 
 
     @Override
@@ -73,7 +128,7 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.CustomViewHo
          */
 
 
-        Log.d("!!!!!","이름:  "+mList.get(position).getName());
+        Log.d("!!!!!", "이름:  " + mList.get(position).getName());
         viewholder.name.setText(mList.get(position).getName());
         viewholder.time.setText(mList.get(position).getTime());
         viewholder.count.setText(mList.get(position).getCount());
@@ -84,5 +139,7 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.CustomViewHo
     public int getItemCount() {
         return (null != mList ? mList.size() : 0);
     }
+
+
 
 }

@@ -1,6 +1,5 @@
 package com.pay.tutoring;
 
-import android.content.ClipData;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -13,21 +12,17 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pay.tutoring.calendar.FragmentCalendar;
-import com.pay.tutoring.data.StudentVO;
+import com.pay.tutoring.student.FragmentStudent;
+import com.pay.tutoring.student.StudentVO;
 import com.pay.tutoring.notification.FragmentNotifications;
 import com.pay.tutoring.payment.FragmentPayment;
 import com.pay.tutoring.setting.FragmentSetting;
-import com.pay.tutoring.student.FragmentStudent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -95,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.payment:
-                    replaceFragment(FragmentPayment.newInstance());
+                    replaceFragment(fragmentPayment.newInstance());
                     break;
 
                 case R.id.notification:

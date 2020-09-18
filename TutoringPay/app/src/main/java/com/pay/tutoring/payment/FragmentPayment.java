@@ -1,10 +1,12 @@
 package com.pay.tutoring.payment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -16,8 +18,13 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.pay.tutoring.MainActivity;
 import com.pay.tutoring.R;
 import com.github.mikephil.charting.data.Entry;
+import com.pay.tutoring.card.CardActivity;
+import com.pay.tutoring.login.AgreePersonalInfortmation;
+import com.pay.tutoring.login.SelectTeacherStudentActivity;
+import com.pay.tutoring.payment.card.TransferActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -99,6 +106,29 @@ public class FragmentPayment extends Fragment {
 
         lineChart.invalidate();
 
+        // BtnOnClickListener의 객체 생성.
+        FragmentPayment.BtnOnClickListener onClickListener = new BtnOnClickListener();
+
+        //각 Button의 이벤트 리스터로 onClickListener 지정
+        Button btn_tax = (Button) view.findViewById(R.id.transfer);
+        btn_tax.setOnClickListener(onClickListener);
+
+
         return view;
+    }
+    class BtnOnClickListener implements Button.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+            // 일단은 intent로 넘기는 걸로 하고, 서버 되면 바꿔놓기
+            switch (view.getId())
+            {
+                case R.id.transfer:
+                    Intent intent = new Intent(getContext(), TransferActivity.class);
+//                    intent.putExtra("setting", "login");
+                    startActivity(intent);
+                    break;
+            }
+        }
     }
 }

@@ -6,12 +6,287 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="모은" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6b15b5b-3ae9-478f-9a9b-d3a0756be086" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/DateTimeDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/AccountListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/AccountVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/BankCodeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/EnterAmountActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/FinishTransfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/ReplyCodeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/card/TransferActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/AddingStudentsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/AddingStudentsDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/IdSearchDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/StudentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/StudentsListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/utility/CustomEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-xhdpi/border_oval.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-xhdpi/search_line.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_enter_amount.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_finish_transfer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_transfer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/add_students.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/add_time.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/date_time_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_account.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/search_id.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/values/half_hour.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/values/week.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/AppManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/ClassAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/ClassAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/ClassData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/ClassData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/EventDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/EventDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/FragmentCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/FragmentCalendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/OneDayDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/OneDayDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/SaturdayDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/SaturdayDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/SundayDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/calendar/SundayDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/card/FragmentAccountNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/card/FragmentAccountNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/data/StudentVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/TestActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/loading/TestActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/AgreePersonalInfortmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/login/AgreePersonalInfortmation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/RetrofitClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/network/ServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/FragmentPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/payment/FragmentPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/ExpandableListAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/FragmentStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pay/tutoring/student/FragmentStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/class_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/list_class.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_account_number.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_account_number.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_calendar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_payment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_payment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_student.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_student.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/list_child.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/list_child.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/list_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/list_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/assetWizardSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle____libs_naveridlogin_android_sdk_4_2_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_activity_activity_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_core_core_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_core_core_ktx_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_databinding_databinding_adapters_4_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_databinding_databinding_common_4_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_databinding_databinding_runtime_4_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_databinding_viewbinding_4_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_fragment_fragment_1_2_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_2_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_extensions_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_service_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_transition_transition_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_etebarian_meow_bottom_navigation_1_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_github_PhilJay_MPAndroidChart_v3_0_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_google_android_material_material_1_2_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_kakao_sdk_auth_1_27_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_kakao_sdk_common_1_27_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_kakao_sdk_network_1_27_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_kakao_sdk_usermgmt_1_27_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_kakao_sdk_util_1_27_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_prolificinteractive_material_calendarview_1_4_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_9_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_72_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_72_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_72_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/navEditor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/libs/naveridlogin_android_sdk_4.2.6.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/androidTest/java/com/pay/tutoring/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/AppManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/ClassAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/ClassData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/EventDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/FragmentCalendar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/OneDayDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/SaturdayDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/calendar/SundayDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/CardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/CardGridItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/CardVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/FragmentAccountNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/FragmentAccountPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/FragmentCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/FragmentFinishCardProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/card/GridAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/data/CustVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/data/LoginData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/data/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/data/StudentVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/loading/LoadingActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/loading/TestActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/login/AgreePersonalInfortmation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/login/GlobalApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/login/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/login/SelectTeacherStudentActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/login/SessionCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/network/NetworkActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/network/NetworkStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/network/RetrofitClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/network/ServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/notification/FragmentNotifications.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/payment/FragmentPayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/setting/FragmentSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/student/ExpandableListAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/student/FragmentStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/pay/tutoring/utility/CheckPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/anim/slide_up_activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable-v24/border_more.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable-v24/loading_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable-v24/network_wifi.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable-v24/unannn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/bank_kb_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/border_normal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_alarm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_baseline_search_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_agree_personal_infortmation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_card.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_loading.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_network.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_select_teacher_student.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/activity_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/class_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_account_number.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_account_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_card.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_finish_card_process.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_payment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/fragment_student.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/item_card_company.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/list_child.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/layout/list_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/menu/navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/test/java/com/pay/tutoring/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,35 +332,48 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="R39M200JPKA" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-17T12:20:20.439Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../공모전/서울ICT/seoul_ict/seoulICT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../[2020]En#/[2020_02] project/seoulICTCOC/seoul_ict/seoulICT" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.pay.tutoring.payment.card" />
+    </key>
+    <key name="android.template.1102482521">
+      <recent name="com.pay.tutoring.payment" />
+    </key>
+    <key name="android.template.1568542523">
+      <recent name="com.pay.tutoring.payment.card" />
+    </key>
     <key name="android.template.-862241591">
       <recent name="com.pay.tutoring" />
-    </key>
-    <key name="android.template.1246808754">
-      <recent name="com.pay.tutoring.loading" />
     </key>
     <key name="android.template.-703763659">
       <recent name="com.pay.tutoring.login" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pay.tutoring.data" />
+      <recent name="com.pay.tutoring.utility" />
       <recent name="com.pay.tutoring.card" />
       <recent name="com.pay.tutoring.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\values" />
       <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\layout" />
       <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring\student" />
+      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring\calendar" />
-      <recent name="C:\Users\mo_ah\Desktop\fintech\TutoringPay\app\src\main\java\com\pay\tutoring" />
+    </key>
+    <key name="android.template.1246808754">
+      <recent name="com.pay.tutoring.loading" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,8 +496,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600170379874</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-">
+      <created>1600173954061</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600173954061</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[add] moeun ui" />
@@ -218,7 +526,8 @@
     <MESSAGE value="[add] coocon api test (TestActivity)" />
     <MESSAGE value="[add] st_calendar (server)" />
     <MESSAGE value="[add] StudentVO" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] StudentVO" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="WindowStateProjectService">
     <state x="915" y="264" key="#PSD" timestamp="1600147200940">
@@ -229,10 +538,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600163215957" />
-    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599712373672">
+    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600344267996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599712373672" />
+    <state x="1170" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600344267996" />
+    <state x="1020" y="278" key="AndroidCreateResourceDirectoryDialog" timestamp="1600302843210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1020" y="278" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600302843210" />
+    <state x="1020" y="278" key="AndroidCreateResourceFileDialog" timestamp="1600302264479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1020" y="278" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600302264479" />
     <state x="1297" y="336" key="AndroidCreateXmlResourceDialog" timestamp="1599997117748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,34 +558,47 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1295" y="288" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600151947246" />
-    <state x="781" y="77" key="CommitChangelistDialog2" timestamp="1600173570664">
+    <state x="781" y="77" key="CommitChangelistDialog2" timestamp="1600173949286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="781" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600173570664" />
-    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl" timestamp="1600149245395">
+    <state x="781" y="77" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600173949286" />
+    <state width="577" height="442" key="Diff.GoToChangePopup" timestamp="1600174088834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600149245395" />
-    <state width="914" height="357" key="GridCell.Tab.0.bottom" timestamp="1600173428057">
+    <state width="577" height="442" key="Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600174088834" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600174291224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428057" />
-    <state width="914" height="357" key="GridCell.Tab.0.center" timestamp="1600173428057">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600174291224" />
+    <state x="2244" y="212" width="440" height="526" key="FileChooserDialogImpl" timestamp="1600403382008">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2244" y="212" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600403382008" />
+    <state x="914" y="237" width="440" height="526" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600344190586" />
+    <state width="972" height="225" key="GridCell.Tab.0.bottom" timestamp="1600403818453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="357" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428057" />
-    <state width="914" height="357" key="GridCell.Tab.0.left" timestamp="1600173428056">
+    <state width="972" height="225" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600403818453" />
+    <state width="972" height="225" key="GridCell.Tab.0.center" timestamp="1600403818453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="357" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428056" />
-    <state width="914" height="357" key="GridCell.Tab.0.right" timestamp="1600173428057">
+    <state width="972" height="225" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600403818453" />
+    <state width="972" height="225" key="GridCell.Tab.0.left" timestamp="1600403818452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="357" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600173428057" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600170384872">
+    <state width="972" height="225" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600403818452" />
+    <state width="972" height="225" key="GridCell.Tab.0.right" timestamp="1600403818453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600167436392" />
+    <state width="972" height="225" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600403818453" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1600173956612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600173956612" />
+    <state x="684" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1600174287371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="684" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600174287371" />
     <state x="1234" y="301" key="chooseDestDirectoryDialog" timestamp="1600104439239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
